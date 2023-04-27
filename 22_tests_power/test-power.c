@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-unsigned power (unsigned x, unsigned y){
-}
+unsigned power (unsigned x, unsigned y);
+
 
 void run_check(unsigned x, unsigned y, unsigned expected_ans) {
   int res = (power(x, y) == expected_ans);
@@ -17,6 +17,8 @@ void run_check(unsigned x, unsigned y, unsigned expected_ans) {
 int main(){
   unsigned test[][3] = { {0, 0, 1},
 			 {1, 0, 1},
+			 {2, 0, 1},
+			 {1, 1, 1},
 			 {0, 1, 0},
 			 {1, 0, 1},
 			 {1, 3, 1},
