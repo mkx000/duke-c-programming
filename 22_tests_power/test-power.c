@@ -5,7 +5,7 @@
 unsigned power (unsigned x, unsigned y);
 
 void run_check(unsigned x, unsigned y, unsigned expected_ans){
-  int res = pow(x, y) == expected_ans;
+  int res = (power(x, y) == expected_ans);
   if (res == 1) {
     exit(EXIT_SUCCESS);
   } else {
